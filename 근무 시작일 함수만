@@ -1,0 +1,52 @@
+public void Start_day1() {//근무 시작일
+	//시작일을 입력하면 그 전까지의 근무양을 총 보수로 환산한 다음 result에서 뺴주면 되는거 아잉교
+	//문제는.. 1일의 요일부터 근무시작일까지의 근무요일이 어떻게 계산되는지 짜는거..
+	//예를들어 8일날 근무를 시작했다고 가정하고, 월요일시작이라고 가정하면, 월요일은 두번들어가게 되는겨.
+	//반대로 목요일은 한번 들어가겠지. 이것을 고려해야함.
+	 startDay = sc.nextInt();
+	// 13일이라 입력했으면 1일 시작일 월요일을 입력한거부터 월 화 수 목 금 토 일 월 화 수 목 금 에서
+	//월이 두번 들어갔으니 이 값을 빼면 됨.!
+	//13일이면 7로 쪼개서 13 /7 - > 1에 나머지 6다 . 그럼 몫을 저장하는 변수를 하나 만들어야겠다.
+	 share = startDay /7;
+	 remainder = startDay % 7;
+	 
+	 for(int i = 0 ; i<dayCount.length; i++) {
+		dayCount[i] += 1; 
+	 }
+	 //나머지 만큼 dayCount에 더하는 로직 
+	 if(first_day.equals("월")) {
+		for(int i = 0; i<remainder; i++) {
+			dayCount[i] +=1;
+		}
+	 }
+	 if(first_day.equals("화")) {
+			for(int i = 1; i<remainder; i++) {
+				dayCount[i] +=1;
+			}		 
+	 }
+	 if(first_day.equals("수")) {
+			for(int i = 2; i<remainder; i++) {
+				dayCount[i] +=1;
+			}
+	 }
+	 if(first_day.equals("목")) {
+			for(int i = 3; i<remainder; i++) {
+				dayCount[i] +=1;
+			}
+	 }
+	 if(first_day.equals("금")) {
+			for(int i = 4; i<remainder; i++) {
+				dayCount[i] +=1;
+			}
+	 }
+	 if(first_day.equals("토")) {
+			for(int i = 5; i<remainder; i++) {
+				dayCount[i] +=1;
+			}
+	 }
+	 if(first_day.equals("일")) {
+			for(int i = 6; i<remainder; i++) {
+				dayCount[i] +=1;
+			}
+	 }
+	}
