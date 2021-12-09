@@ -1,0 +1,17 @@
+		 if(first_day.equals("수")) {
+			 if(remainder >5) {
+				 for(int i = 2; i<dayCount.length; i++) {
+					 dayCount[i] +=1;
+				 }
+				 for(int j = 0; j<remainder -5; j++) {
+					 dayCount[j] +=1;
+				 }
+			 }
+			 else {
+				 for(int i = 2; i<remainder+1 ; i++ ) {
+					 dayCount[i] +=1;
+				 }
+			 }
+		 }
+     
+     
