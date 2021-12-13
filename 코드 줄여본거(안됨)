@@ -28,7 +28,7 @@ class Calendar{ //입력한 달에 월요일~일요일이 각 몇번 있는지�
 			SEVEN[i] = 4;
 		}
 	} 
-	// 월요일이라고 입력했으면 그 달의 월요일이 총 몇개인지 나타내주는 메소드들
+	// /월요일이라고 입력했으면 그 달의 월요일이 총 몇개인지 나타내주는 메소드들
 	public void Start_day_Select() {
 		monthDay = days[month-1];
 		if(first_day.equals("월")) { // .equal() 안쓰면 비교 불가 이유 -깃허브에 올림
