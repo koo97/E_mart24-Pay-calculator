@@ -1,0 +1,28 @@
+	public void input() {
+		System.out.println("년을 입력하세요.");
+		year= sc.nextInt();
+		while(true) {
+			if(year <1 || year >9999) {
+				System.out.println("잘못된 숫자를 입력했습니다. 다시 입력해주세요");
+				year =sc.nextInt();
+			}
+			else {
+				break;
+			}
+		}
+		
+		System.out.println("월을 입력하세요");
+		month = sc.nextInt();
+		
+		while(true) {
+			if(month <1 || month >12) {
+				System.out.println("잘못된 숫자를 입력했습니다. 다시 입력해주세요");
+				month =sc.nextInt();
+			}
+			else {
+				break;
+			}
+		}
+		System.out.println("시작 요일을 입력하세요");
+		first_day = sc.next();
+	}
