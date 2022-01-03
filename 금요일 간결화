@@ -1,0 +1,21 @@
+		 if(first_day.equals("금")) {
+			 if(remainder == 5) {
+				 for(int i = 4; i<dayCount.length; i++) {
+					 dayCount[i] +=1;
+				 }
+				 dayCount[0]+=1;
+			 } 
+			 if(remainder == 6) {
+				 for(int i = 4; i<dayCount.length; i++) {
+					 dayCount[i] +=1;
+				 }
+				 dayCount[0] +=1;
+				 dayCount[1] +=1;
+			 }
+		 for(int i = 2; i<5; i++) {
+			 if( remainder == i) {
+				 for(int j =4; j< i+3; j++) {
+					 dayCount[j] +=1;
+				 }
+			 }
+		 }
