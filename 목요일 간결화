@@ -1,8 +1,13 @@
+			  if(remainder == 6) {
+				 for(int i = 3; i<dayCount.length; i++) {
+					 dayCount[i] +=1;
+				 } // 3 4 5 6  + 0
+				 dayCount[0] +=1;
+		 }
 		 for(int i = 2; i<6; i++) {
 			 if( remainder == i) {
 				 for(int j =3; j< i+2; j++) {
 					 dayCount[j] +=1;
 				 }
-				
 			 }
 		 }
