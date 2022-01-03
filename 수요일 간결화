@@ -1,0 +1,9 @@
+		 if(first_day.equals("수")) {
+			for(int i = 2; i < 7 ; i++){
+				if( remainder == i){
+				   	for(int j = 2; j < i+1; j++){
+				   	dayCount[j] +=1;
+				   }
+				}
+			}
+	}
