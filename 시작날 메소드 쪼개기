@@ -1,0 +1,120 @@
+public void startMon() {
+		monthDay = days[month-1];
+		if(first_day.equals("월")) { // .equal() 안쓰면 비교 불가 이유 -깃허브에 올림
+			if(monthDay == 31) {
+			for(int i=0; i<3; i++) {
+				 SEVEN[i] +=1;
+			}
+			if(monthDay == 30) {
+				for(int j =0; j<2 ; j++) {
+					SEVEN[j] +=1;		
+				}
+			}
+			}
+		}
+	}
+	public void startTue() {
+		if(first_day.equals("화")) {
+			if(monthDay == 31) {
+			for(int i = 1; i < 4; i++) {
+				 SEVEN[i] +=1;
+			}
+			if(monthDay == 30) {
+				for(int j =1; j<3; j++) {
+					SEVEN[j] +=1;
+				}
+			}
+			}
+		}
+	}
+	public void startWed() {
+		if(first_day.equals("수")) {
+			if(monthDay == 31) {
+			for(int i = 2; i<5; i++) {
+				 SEVEN[i] +=1;
+			}
+			if(monthDay == 30) {
+				for(int j =2; j<4; j++) {
+					SEVEN[j] +=1;
+				}
+			}
+			}
+		}
+	}
+	public void startThur() {
+		if(first_day.equals("목")) {
+			if(monthDay==31) {
+			for(int i=3; i<6; i++) {
+				 SEVEN[i] +=1;
+			}
+			if(monthDay == 30) {
+				for(int j=3; j<5; j++) {
+					SEVEN[j] +=1;
+				}
+			}
+			}
+		}
+	}
+	public void startFri() {
+		if(first_day.equals("금")) {
+			if(monthDay==31) {
+			for(int i=4; i<7; i++) {
+				 SEVEN[i] +=1;
+			}
+			if(monthDay==30) {
+				for(int j=4; j<6; j++) {
+					SEVEN[j] +=1;
+				}
+			}
+			}
+		}
+	}
+	public void startSat() {
+	if(first_day.equals("토")) {
+			if(monthDay==31) {
+			for(int i=5; i<7; i++) {
+				 SEVEN[i]+=1;
+			}
+				SEVEN[0] += 1 ;
+			}
+			if(monthDay==30) {
+				for(int j =5; j<7; j++) {
+					SEVEN[j]+=1;
+				}
+			}
+		}
+	}
+	public void startSun() {
+		if(first_day.equals("일")) {
+			if(monthDay==31) {
+				SEVEN[6] +=1;
+				SEVEN[0] +=1;
+				SEVEN[1] +=1;
+			if(monthDay==30) {
+				SEVEN[6] +=1;
+				SEVEN[0] +=1;
+			}	
+			}
+		}
+	}
+ 
+ 
+	public void startFind() {
+		if(first_day.equals("월"))	{
+		startMon();
+		}else if(first_day.equals("월"))	{
+		startTue();
+		}else if(first_day.equals("화"))	{
+		startWed();
+		}else if(first_day.equals("수"))	{
+		startThur();
+		}else if(first_day.equals("목"))	{
+		startFri();
+		}else if(first_day.equals("금"))	{
+		startSat();
+		}else if(first_day.equals("토"))	{
+		startSun();
+		}
+		
+	
+	}
